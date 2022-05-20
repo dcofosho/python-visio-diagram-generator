@@ -133,7 +133,7 @@ def generate_diagram(tree, template_path, stencil_path, output_path, master):
 		print("RAH + base_width: {}\n Node: {}\n".format(resize_amount_horizontally+base_width, text))
 		vis_shape.Resize(0, resize_amount_horizontally/2, 65)
 		vis_shape.Resize(4, resize_amount_horizontally/2, 65)
-		vis_shape.text = text
+		vis_shape.Text = text
 		return vis_shape
 
 	def build_node_list_from_dict(tree):
